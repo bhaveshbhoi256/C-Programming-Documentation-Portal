@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Language Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <nav id="navbar">
+        <header><b>C Programming Language Documentation</b></header>
+        <ol>
+        <li><a class="nav-link" href="#Introduction">Introduction</a><br>
+        <li><a class="nav-link" href="#Program_Structure">Program Structure</a><br>
+        <li><a class="nav-link" href="#Data_Types_and_Variables">Data Types and Variables</a><br>
+        <li><a class="nav-link" href="#Operators">Operators</a><br>
+        <li><a class="nav-link" href="#Control_Flow">Control Flow</a><br>
+        <li><a class="nav-link" href="#Functions">Functions</a><br>
+        <li><a class="nav-link" href="#Memory_management">Memory management</a><br>
+        <li><a class="nav-link" href="#Structures_and_Unions">Structures and Unions</a><br>
+        <li><a class="nav-link" href="#File_I/O">File I/O</a><br>
+        <li><a class="nav-link" href="#Error_Handling">Error Handling</a><br>
+        <li><a class="nav-link" href="#Standard_Library">Standard Library</a><br>
+      </nav>
+      <main id="main-doc">
+        <ol>
+        <li><section class="main-section" id="Introduction">
+          <header><b>Introduction</b></header>
+          <ul>
+          <li><p><b>Overview: </b>C is a powerful, general-purpose programming language, renowned for system programming, performance, and control over memory. Created by Dennis Ritchie in the 1970s, C has influenced many modern programming languages.</p>
+          
+           <li><p><b>Applications: </b>Operating systems, embedded systems, compilers, and performance-intensive applications.</p>
+          
+           <li><p><b>Audience:</b> This documentation is for beginners, intermediate programmers, and advanced users looking to understand C's features in-depth.</p>
+          </section><br>
+
+
+          <li><section class="main-section" id="Program_Structure">
+            <header><b>Program Structure</b></header>
+            <ul>
+            <li><p><b>Header Files:</b> Libraries like <code>stdio.h, stdlib.h </code> for input/output, memory, and more.</p>
+
+             <li><p><b>Main Function:</b> The starting point of execution.</p>
+
+             <li><p><b>Syntax Overview:</b> Statements end with ;, code blocks use {}, and comments use // or /* ... */.</p>
+             
+             <li><p><b>Syntax</b><p> <code>#include < stdio.h><br>
+
+int main() {<br>
+    printf("Hello, World!\n");<br>
+    return 0;<br>
+}
+
+  </code>
+ </section><br>
+
+     
+
+         <li> <section class="main-section" id="Data_Types_and_Variables">
+            <header><b>Data Types and Variables</b></header>
+          <ul>
+            <li><p><b>Primitive Types:</b> int, char, float, double</p>
+            <li><p><b>Modifiers:</b> short, long, signed, unsigned</p>
+            <li><p><b>Derived Types:</b> Arrays, Pointers, Structures, Unions, Enums
+</p>
+            <li><p><b>Declaration and Initialization:</b></p>
+            <p><b>Example:</b><p>
+            <code>int num = 10;<br>
+char letter = 'A';</code>
+
+
+
+          </section><br>
+
+
+          <li><section class="main-section" id="Operators">
+            <header><b>Operators</b></header>
+            <ul>
+              <li><p><b>Arithmetic Operators:</b> +, -, *, /, %</p>
+                <li><p><b>Relational Operators:</b> ==, !=, >, <, >=, <=</p>
+                  <li><p><b>Logical Operators:</b> &&, ||, !</p>
+                    <li><p><b>Bitwise Operators:</b> &, |, ^, ~, <<, >></p>
+                      <li><p><b>Assignment Operators:</b> =, +=, -=, etc.</p>
+                        <li><p><b>Unary Operators:</b> ++, --</p>
+          </section>
+
+
+         <li> <section class="main-section" id="Control_Flow">
+            <header><b>Control Flow</b></header>
+            <ul>
+              <li><p><b>Conditionals:</b> if, if-else, switch</p>
+              <li><p><b>Loops:</b> for, while, do-while</p>
+              <p><b>Example:</b></p>
+              <code>for (int i = 0; i < 10; i++) {<br>
+    printf("%d\n", i);<br>
+}</code>
+          </section><br>
+            
+           <li><section class="main-section" id="Functions">
+            <header><b>Functions</b></header>
+            <ul>
+              <li><p><b>Declaration and Definition:</b> Functions are declared with a return type and parameters.</p>
+              <li><p><b>Function Prototypes:</b> Allow functions to be declared before they’re used.</p>
+              <li><p><b>Definition:</b>Functions have a return type and parameters.</p>
+              <p><b>Example:</b></p>
+              <code>int add(int a, int b) {<br>
+    return a + b;<br>
+}</code>
+
+          </section><br>
+           <li><section class="main-section" id="Memory_management">
+            <header><b>Memory management</b></header>
+            <ul>
+              <li><p><b>Pointers:</b> int *p for memory addresses, malloc, free for dynamic memory.</p>
+
+             <p><b>Example:</b></p>
+              <code>int *ptr = (int*)malloc(sizeof(int) * 5);<br>
+free(ptr);</code>
+          </section><br>
+
+           <li><section class="main-section" id="Structures_and_Unions">
+            <header><b>Structures and Unions</b></header>
+            <ul>
+            <li><p><b>Structures:</b> Group variables (e.g., struct Point { int x; int y; };).</p>
+             <li><p><b>Unions:</b> Share memory across members.</p>
+          </section>
+
+           <li><section class="main-section" id="File_I/O">
+            <header><b>File I/O</b></header>
+            <ul>
+              <li><p><b>Basic Functions:</b> fopen, fprintf, fclose</p>
+              <p><b>Example:</b></p>
+          <code>FILE *file = fopen("file.txt", "w");<br>
+fprintf(file, "Hello, File!\n");<br>
+fclose(file);</code>
+
+          </section><br>
+
+            <li><section class="main-section" id="Error_Handling">
+            <header><b>Error Handling</b></header>
+            <ul>
+              <li><p><b>Return Codes:</b> Functions typically return 0 for success, non-zero for failure.</p>
+              <li><p><b>Error Reporting:</b> perror for I/O errors</p>
+          </section> 
+
+            <li><section class="main-section" id="Standard_Library">
+            <header><b>Standard Library</b></header>
+            <ul>
+              <li><p><b>Categories:</b> < stdio.h> for I/O, < stdlib.h> for memory management, < string.h> for strings, < math.h> for math functions.</p>
+          </section>                        
+       
+       
+        </main>
+      </body>
+  </html>
