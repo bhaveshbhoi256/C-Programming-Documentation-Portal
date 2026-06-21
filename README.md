@@ -32,7 +32,7 @@ A responsive documentation website designed to simplify C programming concepts t
 
 ## Live Demo
 
-[Demo : ](https://bhaveshbhoi256.github.io/C-Programming-Documentation-Portal/)
+[Demo Here ](https://bhaveshbhoi256.github.io/C-Programming-Documentation-Portal/)
 
 ## Preview
 
