@@ -37,11 +37,3 @@ A responsive documentation website designed to simplify C programming concepts t
 ## Preview
 
 <img width="1230" height="967" alt="image" src="https://github.com/user-attachments/assets/cd02aafe-e8de-42db-a63c-461006107523" />
-
-
-## Installation
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/repository-name.git
